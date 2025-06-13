@@ -1,25 +1,27 @@
+// src/components/Layout/Layout.tsx
 import React, { useState } from 'react';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
-import BookingModal from '../BookingModal/BookingModal'; 
+import BookingModal from '../BookingModal/BookingModal';
+import { Outlet } from 'react-router-dom'; // <-- добавлен
 
-interface LayoutProps {
-  children: React.ReactNode;
-}
+interface LayoutProps {}
 
-const Layout: React.FC<LayoutProps> = ({ children }) => {
+const Layout: React.FC<LayoutProps> = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
 
   return (
-    <div className="layout">
+    <>
       <Header onOpenModal={openModal} />
-      <main>{children}</main>
+      <main>
+        <Outlet /> {/* <-- здесь будут рендериться страницы */}
+      </main>
       <Footer />
       <BookingModal isOpen={isModalOpen} onClose={closeModal} />
-    </div>
+    </>
   );
 };
 

@@ -1,3 +1,7 @@
+.slider {
+  position: relative;
+}
+
 /* card__peace-forest */
 .card__peace-forest {
   position: relative;
@@ -22,12 +26,10 @@
   font-weight: 300;
   line-height: 72px;
   margin: 0;
-
 }
 
 .card__peace-forest-description {
   position: relative;
-  white-space: pre-line;
   font-family: "Mulish Light";
   font-size: 20px;
   font-weight: 400;
@@ -37,6 +39,68 @@
   top: 34px;
   margin: 0;
 }
+
+/* Стили для бронирования */
+.booking--header {
+  position: absolute;
+  max-width: 386px;
+  display: flex;
+  flex-wrap: wrap;
+  bottom: -37px;
+  z-index: 1;
+  left: 146px;
+}
+
+.booking__button {
+  display: flex; 
+  background: rgba(91, 100, 96, 1); 
+  color: #fff; 
+  font-family: "Din Light";
+  width: 266px;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+}
+
+.booking__button a {
+  color: white;
+  text-decoration: none;
+}
+
+.booking__box {
+  width: 120px;
+  height: 100px;
+  background-color: rgba(233, 236, 224, 1);
+  padding: 22px 29px;
+  display: flex;
+  flex-direction: column;
+}
+
+.booking__top {
+  font-family: "Din Light";
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 16px;
+  text-align: left;
+}
+
+.booking__items {
+  font-family: "Din Regular";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  text-align: left;
+}
+
+.booking__batton {
+  font-family: "Din Light";
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 16px;
+  text-align: right;
+}
+
+/* Стили для навигации */
 .swiper-button {
   position: absolute;
   bottom: 0;
@@ -50,6 +114,21 @@
   column-gap: 46px;
 }
 
+.swiper-button-left,
+.swiper-button-right {
+  cursor: pointer;
+}
+
+/* Стили для пагинации */
+
+/* Убираем стандартные стили Swiper для пагинации */
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  display: none !important;
+}
+
 .swiper-horizontal>.pagination {
   position: absolute;
   width: auto;
@@ -59,7 +138,6 @@
   display: flex;
   z-index: 1;
   background-color: rgba(255, 255, 255, 0.3);
-
 }
 
 .pagination-bullet {
@@ -72,65 +150,3 @@
   background-color: #FFFFFF;
 }
 
-
-/* Блок бронирования */
-.booking--header {
-  position: absolute;
-  max-width: 386px;
-  bottom: -37px;
-  z-index: 1;
-  left: 146px;
-  display: flex;
-  gap: 0;
-}
-
-.booking__button {
-  display: flex
-;
-  background: rgba(91, 100, 96, 1);
-  color: #fff;
-  font-family: "Din Light";
-  width: 266px;
-  height: 100px;
-  align-items: center;
-  justify-content: center;
-}
-
-.booking__button a {
-  text-decoration: none;
-  color: white;
-  font-size: 16px;
-}
-
-.booking__box {
-  width: 120px;
-  height: 100px;
-  background-color: rgba(233, 236, 224, 1);
-  padding: 22px 29px;
-  display: flex;
-  flex-direction: column;
-}
-
-.booking__top {
-  font-family: "Din Light", sans-serif;
-  font-size: 12px;
-  font-weight: 300;
-  line-height: 16px;
-  text-align: left;
-}
-
-.booking__items {
-  font-family: "Din Regular", sans-serif;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 28px;
-  text-align: left;
-}
-
-.booking__batton {
-  font-family: "Din Light", sans-serif;
-  font-size: 12px;
-  font-weight: 300;
-  line-height: 16px;
-  text-align: right;
-}

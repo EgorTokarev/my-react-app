@@ -1,7 +1,11 @@
-// App.tsx
+// src/App.tsx
 import React, { useState, useEffect } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 import Layout from './components/Layout/Layout';
-import HomePage  from './pages/HomePage/HomePage';
+import HomePage from './pages/HomePage/HomePage';
+import CardsPage from './pages/CardsPage/CardsPage';
+import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
 import Preloader from './components/Preloader/Preloader';
 
 const App: React.FC = () => {
@@ -12,15 +16,21 @@ const App: React.FC = () => {
   }, []);
 
   return (
-    <div className="app">
-      {isLoading ? (
-        <Preloader />
-      ) : (
-        <Layout>
-          <HomePage />
-        </Layout>
-      )}
-    </div>
+    <BrowserRouter>
+      <div className="app">
+        {isLoading ? (
+          <Preloader />
+        ) : (
+          <Routes>
+            <Route path="/" element={<Layout />}>
+              <Route index element={<HomePage />} />
+              <Route path="cards" element={<CardsPage />} />
+              <Route path="*" element={<NotFoundPage />} />
+            </Route>
+          </Routes>
+        )}
+      </div>
+    </BrowserRouter>
   );
 };
 

@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import { Link } from 'react-router-dom';
 import './Header.module.css';
 
 interface HeaderProps {
@@ -9,13 +10,24 @@ const Header: FC<HeaderProps> = ({ onOpenModal }) => {
   return (
     <header className="header">
       <div className="logo">
-        <img src="./src/assets/images/logo.jpg" alt="Логотип" />
+        <Link to="/">
+          <img src="./src/assets/images/logo.jpg" alt="Логотип" />
+        </Link>
       </div>
       <nav className="nav">
         <ul className="nav__list">
-          {['Главная', 'Хижина', 'Территория', 'Бронирование', 'О нас', 'Вопросы'].map((item) => (
-            <li key={item} className={`nav__item ${item === 'Главная' ? 'nav__item--active' : ''}`}>
-              <a className="nav__link" href="#">{item}</a>
+          {[
+            { title: 'Главная', path: '/' },
+            { title: 'Хижина', path: '/cards' },
+            { title: 'Территория', path: '/territory' },
+            { title: 'Бронирование', path: '/booking' },
+            { title: 'О нас', path: '/about' },
+            { title: 'Вопросы', path: '/faq' },
+          ].map((item) => (
+            <li key={item.title} className={`nav__item ${item.title === 'Главная' ? 'nav__item--active' : ''}`}>
+              <Link className="nav__link" to={item.path}>
+                {item.title}
+              </Link>
             </li>
           ))}
         </ul>
