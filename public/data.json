@@ -1,0 +1,50 @@
+[
+  {
+    "src": "./src/assets/images/icons/fridge.svg",
+    "caption": "Мини-холодильник"
+  },
+  {
+    "src": "./src/assets/images/icons/kitchen.svg",
+    "caption": "Мини-кухня"
+  },
+  {
+    "src": "./src/assets/images/icons/coffee.svg",
+    "caption": "Кофемашина"
+  },
+  {
+    "src": "./src/assets/images/icons/Frame.svg",
+    "caption": "Электрический чайник для приготовления чая"
+  },
+  {
+    "src": "./src/assets/images/icons/park.svg",
+    "caption": "Парковка"
+  },
+  {
+    "src": "./src/assets/images/icons/trees.svg",
+    "caption": "Захватывающие дух виды"
+  },
+  {
+    "src": "./src/assets/images/icons/temperature.svg",
+    "caption": "Полы с подогревом"
+  },
+  {
+    "src": "./src/assets/images/icons/plug.svg",
+    "caption": "230В"
+  },
+  {
+    "src": "./src/assets/images/icons/wifi.svg",
+    "caption": "Вайфай"
+  },
+  {
+    "src": "./src/assets/images/icons/shower.svg",
+    "caption": "Душ"
+  },
+  {
+    "src": "./src/assets/images/icons/toilet.svg",
+    "caption": "Смывные унитазы"
+  },
+  {
+    "src": "./src/assets/images/icons/towels.svg",
+    "caption": "Постельное белье и полотенца"
+  }
+]

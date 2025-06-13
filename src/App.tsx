@@ -1,14 +1,27 @@
-import Message from './components/Message';
+// App.tsx
+import React, { useState, useEffect } from 'react';
+import Layout from './components/Layout/Layout';
+import HomePage  from './pages/HomePage/HomePage';
+import Preloader from './components/Preloader/Preloader';
 
-function App() {
-  const messageText = 'Привет, это мой первый React-компонент!';
+const App: React.FC = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => setIsLoading(false), 2000);
+  }, []);
 
   return (
-    <div className="App">
-      <h1>Мое приложение</h1>
-      <Message text={messageText} />
+    <div className="app">
+      {isLoading ? (
+        <Preloader />
+      ) : (
+        <Layout>
+          <HomePage />
+        </Layout>
+      )}
     </div>
   );
-}
+};
 
 export default App;

@@ -1,0 +1,16 @@
+.gallery {
+  padding: 0 30px;
+  margin-bottom: 124px;
+}
+
+.gallery__list {
+  display: flex;
+  column-gap: 24px;
+}
+
+.gallery__img {
+  width: 432px;
+  height: 387px;
+  object-fit: cover;
+  flex-shrink: 0;
+}

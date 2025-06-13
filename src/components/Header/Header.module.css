@@ -1,0 +1,68 @@
+.header {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .logo {
+    margin-left: 120px;
+  }
+  
+  .nav {
+    position: relative;
+    margin: 20px 0;
+    display: flex;
+    margin-left: auto;
+    max-width: 900px;
+    flex-grow: 1;
+    align-items: center;
+  }
+  
+  .nav__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    column-gap: 36px;
+  }
+  
+  .nav__item {
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+    font-family: "Din Light";
+  }
+  
+  .nav__link {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .nav__item--active .nav__link {
+    border-bottom: 2px solid black;
+  }
+  
+  .nav_item--language {
+    display: flex;
+    margin-left: 25px;
+  }
+  
+  .language {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .reservation {
+    margin-right: 40px;
+    margin-left: auto;
+  }
+  
+  .reservation__link {
+    display: inline-block;
+    background: rgba(91, 100, 96, 1);
+    color: #fff;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    font-family: "Din Light";
+    border: none;
+    cursor: pointer;
+  }

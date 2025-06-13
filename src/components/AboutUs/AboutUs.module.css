@@ -1,0 +1,30 @@
+.about-us {
+  display: flex;
+  position: relative;
+}
+
+.about-us__description {
+  position: absolute;
+  background: rgba(233, 236, 224, 1);
+  border-radius: 50%;
+  height: 157px;
+  width: 157px;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 22px;
+  box-sizing: border-box;
+  font-family: "Din";
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.about-us__content {
+  flex-basis: 50%;
+}

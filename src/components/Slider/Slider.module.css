@@ -1,0 +1,136 @@
+/* card__peace-forest */
+.card__peace-forest {
+  position: relative;
+  font-family: "Din Light";
+}
+
+.card__peace-content {
+  position: absolute;
+  right: 58px;
+  top: 95px;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: white;
+}
+
+.card__peace-forest-title {
+  font-family: "OpenSans Light";
+  font-size: 70px;
+  font-weight: 300;
+  line-height: 72px;
+  margin: 0;
+
+}
+
+.card__peace-forest-description {
+  position: relative;
+  white-space: pre-line;
+  font-family: "Mulish Light";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  right: 84px;
+  top: 34px;
+  margin: 0;
+}
+.swiper-button {
+  position: absolute;
+  bottom: 0;
+  width: 35px;
+  height: 15px;
+  margin-bottom: 84px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  display: flex;
+  column-gap: 46px;
+}
+
+.swiper-horizontal>.pagination {
+  position: absolute;
+  width: auto;
+  left: auto;
+  right: 59px;
+  bottom: 90px;
+  display: flex;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.3);
+
+}
+
+.pagination-bullet {
+  display: block;
+  width: 15px;
+  height: 2px;
+}
+
+.pagination-bullet-active {
+  background-color: #FFFFFF;
+}
+
+
+/* Блок бронирования */
+.booking--header {
+  position: absolute;
+  max-width: 386px;
+  bottom: -37px;
+  z-index: 1;
+  left: 146px;
+  display: flex;
+  gap: 0;
+}
+
+.booking__button {
+  display: flex
+;
+  background: rgba(91, 100, 96, 1);
+  color: #fff;
+  font-family: "Din Light";
+  width: 266px;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+}
+
+.booking__button a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.booking__box {
+  width: 120px;
+  height: 100px;
+  background-color: rgba(233, 236, 224, 1);
+  padding: 22px 29px;
+  display: flex;
+  flex-direction: column;
+}
+
+.booking__top {
+  font-family: "Din Light", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 16px;
+  text-align: left;
+}
+
+.booking__items {
+  font-family: "Din Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  text-align: left;
+}
+
+.booking__batton {
+  font-family: "Din Light", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 16px;
+  text-align: right;
+}
