@@ -1,0 +1,17 @@
+/* src/components/CardList/CardList.module.css*/
+
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  .loading,
+  .error {
+    text-align: center;
+    font-size: 1.25rem;
+    margin: 2rem;
+    color: red;
+  }
